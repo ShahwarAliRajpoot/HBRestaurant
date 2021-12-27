@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB Restaurant</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+ <link rel="icon" type="image/x-icon" href="./image/home-img.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="./index.html" class="logo"> <i class="fas fa-utensils main-logo"></i>HBRestaurant</a>
+    
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./order.html">Order</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+    
+</header>
+
+
+<section class="search-form-container">
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</section>
+
+<section class="shopping-cart-container" id="myOrder">
+
+    <div class="products-container">
+
+        <h3 class="title">your products</h3>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-1.png" alt="">
+                <div class="content">
+                    <h3>Meaty Burger</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="3" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> Rs 399 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-2.png" alt="">
+                <div class="content">
+                    <h3>Vegetable Pizza</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> Rs 479 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>Sandwich</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="5" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> Rs 150 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-4.png" alt="">
+                <div class="content">
+                    <h3>State Burger</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="2" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> Rs 160 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/menu-5.png" alt="">
+                <div class="content">
+                    <h3>Potato Frice</h3>
+                    <span> quantity : </span>
+                    <input type="number" name="" value="4" id="">
+                    <br>
+                    <span> price : </span>
+                    <span class="price"> Rs 120 </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cart-total">
+
+        <h3 class="title"> cart total </h3>
+
+        <div class="box">
+
+            <h3 class="subtotal"> subtotal : <span>Rs 3,226</span> </h3>
+            <h3 class="total"> total : <span>Rs 3,226</span> </h3>
+
+            <a href="#" onclick="checkout()" class="btn">proceed to checkout</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="login-form-container">
+
+    <form action="">
+        <h3>login form</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="password" name="" placeholder="enter your password" id="" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <button type="submit" value="login now" class="btn">Login Now</button>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+
+</div>
+
+<section class="home"  id="home">
+
+    <div class="content">
+        <span>welcome foodies</span>
+        <h3>different spices for the different tastes </h3>
+        <p>Momos are a type of Tibetan/Nepali dumpling dish popular in these regions. Momo is found in the cuisines of India, Nepal and Tibet. It is similar to baozi, jiaozi and mantou in Chinese cuisine,</p>
+        <a href="#" onclick="addOrder()" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="image/home-img.png" alt="" class="home-img">
+        <img src="image/home-parallax-img.png" alt="" class="home-parallax-img">
+    </div>
+
+</section>
+
+<section class="category" id="myOther">
+
+    <a href="#" class="box">
+        <img src="image/cat-1.png" alt="">
+        <h3>combo</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="image/cat-2.png" alt="">
+        <h3>pizza</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="image/cat-3.png" alt="">
+        <h3>burger</h3>
+    </a>
+
+    <a href="#" class="box" id="myChicken">
+        <img src="image/cat-4.png" alt="">
+        <h3>chicken</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="image/cat-5.png" alt="">
+        <h3>dinner</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="image/cat-6.png" alt="">
+        <h3>coffee</h3>
+    </a>
+
+</section>
+
+<section class="about">
+
+    <div class="image">
+        <img src="image/about-img.png" alt="">
+    </div>
+
+    <div class="content">
+        <span>why choose us?</span>
+        <h3 class="title">what's make our food delicious!</h3>
+        <p>Chicken Momos – is a juicy dumpling from the cuisine of  Tibet and Nepal. The main ingredients in this steamed dumpling are all-purpose flour, water, meat, vegetables, served with tomato chutney, garlic chutney, and many more.</p>
+        <a href="#" onclick="net()" class="btn">read more</a>
+       
+    </div>
+
+</section>
+
+<section class="popular">
+
+    <div class="heading" >
+        <span>Popular Food</span>
+        <h3>Most Popular Dishes</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="javascript:void(0)" onclick="favorite(this)" class="far fa-heart"></a>
+            <div class="image">
+                <img src="image/food-1.png" alt="">
+            </div>
+            <div class="content" id="myMomos">
+                <h3>Chicken Momos</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">Rs 245 <span class="strike">Rs 285</span></div>
+                <a href="#" onclick="addOrder()" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="javascript:void(0)" onclick="favorite(this)" class="far fa-heart"></a>
+            <div class="image">
+                <img src="image/food-2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Grill Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (45) </span>
+                </div>
+                <div class="price">Rs 390 <span class="strike"> Rs 450</span></div>
+                <a href="#" onclick="addOrder()" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="javascript:void(0)" onclick="favorite(this)" class="far fa-heart"></a>
+            <div class="image">
+                <img src="image/food-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Chicken Fajita</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (39) </span>
+                </div>
+                <div class="price">Rs 450 <span class="strike"> Rs 450</span></div>
+                <a href="#" onclick="addOrder()" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="javascript:void(0)" onclick="favorite(this)" class="far fa-heart"></a>
+            <div class="image">
+                <img src="image/food-4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Black Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span> (34) </span>
+                </div>
+                <div class="price">Rs 380 <span class="strike"> Rs 450</span></div>
+                <a href="#" onclick="addOrder()" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="javascript:void(0)" onclick="favorite(this)" class="far fa-heart"></a>
+            <div class="image">
+                <img src="image/food-5.png" alt="">
+            </div>
+            <div class="content" id="myPizza">
+                <h3>Chicken Tikka</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">Rs 650 <span class="strike"> Rs 750</span></div>
+                <a href="#" onclick="addOrder()" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="javascript:void(0)" onclick="favorite(this)" class="far fa-heart"></a>
+            <div class="image">
+                <img src="image/food-6.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Very Veggie</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span> (40) </span>
+                </div>
+                <div class="price">Rs 479 <span class="strike"> Rs 550</span></div>
+                <a href="#" onclick="addOrder()" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="javascript:void(0)" onclick="favorite(this)" class="far fa-heart"></a>            <div class="image">
+                <img src="image/food-7.png" alt="">
+            </div>
+            <div class="content" id="myBurger">
+                <h3>Meaty Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (47) </span>
+                </div>
+                <div class="price">Rs 399 <span class="strike"> Rs 499</span></div>
+                <a href="#" onclick="addOrder()" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="javascript:void(0)" onclick="favorite(this)" class="far fa-heart"></a>
+            <div class="image">
+                <img src="image/food-8.png" alt="">
+            </div>
+            <div class="content" >
+                <h3>Beef Chili Pizza</h3>
+                <div class="stars" data-aos="fade-up">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span> (37) </span>
+                </div>
+                <div class="price">Rs 799 <span class="strike"> Rs 900</span></div>
+                <a href="#" onclick="addOrder()" class="btn">add to cart</a>
+            </div>
+        </div>
+     
+
+    </div>
+  
+</section>
+
+<section class="banner">
+
+    <div class="row-banner">
+        <div class="content">
+            <span>double cheese</span>
+            <h3>burger</h3>
+            <p>with cococola and fries</p>
+            <a href="#" onclick="addOrder()" class="btn">order now</a>
+        </div>
+    </div>
+
+    <div class="grid-banner">
+        <div class="grid">
+            <img src="image/banner-1.png" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>upto 50% off</h3>
+                <a href="#" onclick="addOrder()" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="grid">
+            <img src="image/banner-2.png" alt="">
+            <div class="content center">
+                <span>special offer</span>
+                <h3>upto 25% extra</h3>
+                <a href="#" onclick="addOrder()" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="grid">        
+            <img src="image/banner-3.png" alt="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>100% cashback</h3>
+                <a href="#" onclick="addOrder()" class="btn">order now</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="speciality" id="speciality">
+
+    <div class="heading">
+        <span>Our</span>
+        <h3>Speciality</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="image/s-img-1.jpg" alt="">
+            <div class="content">
+                <img src="image/s-1.png" alt="">
+                <h3>Tasty Grill burger</h3>
+                <p>Preheat a grill to medium high. Form ground beef (preferably chuck) into 6-ounce patties and make an indentation in each. Season the patties on both sides with salt and pepper.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="image/s-img-2.jpg" alt="">
+            <div class="content">
+                <img src="image/s-2.png" alt="">
+                <h3>Tasty Pizza</h3>
+                <p>Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients,</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="image/s-img-3.jpg" alt="">
+            <div class="content">
+                <img src="image/s-3.png" alt="">
+                <h3>Cold ice-Cream</h3>
+                <p>Ice cream is a sweetened frozen food typically eaten as a snack or dessert. It may be made from milk or cream and is flavoured with a sweetener, either sugar or an alternative,</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="image/s-img-4.jpg" alt="">
+            <div class="content">
+                <img src="image/s-4.png" alt="">
+                <h3>Soft Drinks</h3>
+                <p>A soft drink is a drink that usually contains water, a sweetener, and a natural and/or artificial flavoring. The sweetener may be a sugar, high-fructose corn syrup, fruit juice, a sugar substitute,</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="image/s-img-5.jpg" alt="">
+            <div class="content">
+                <img src="image/s-5.png" alt="">
+                <h3>Tasty Dessert</h3>
+                <p>Mithai is the Hindi/Urdu word for sweets that are often made from flour, milk, sugar, nuts and even in some cases, vegetables and lentils that are then flavoured with rose water, saffron and cardamom.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="image/s-img-6.jpg" alt="">
+            <div class="content">
+                <img src="image/s-6.png" alt="">
+                <h3>Healty Breakfast</h3>
+                <p>Breakfast foods are rich in key nutrients such as folate, calcium, iron, B vitamins and fibre. Breakfast provides a lot of your day's total nutrient intake. In fact, people who eat breakfast are more like</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <span>our blogs</span>
+        <h3>our daily stories</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box ">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 25th dec, 2021 </h3>
+                <img src="image/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> momos / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> burger / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> pizza  </a>
+                </div>
+                <h3>BURGERS BRUNCH...</h3>
+                <p>Smashed beef patty with sautéed mushrooms, lettuce, crispy onion rings,</p>
+                <a href="#" onclick="net()" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 25th dec, 2021 </h3>
+                <img src="image/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> momos / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> burger / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> pizza  </a>
+                </div>
+                <h3>Turkish Shawarma...</h3>
+                <p>Shawarma is a popular Levantine Arab dish consisting of meat cut into thin slices,</p>
+                <a href="#" onclick="net()" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 25th dec, 2021 </h3>
+                <img src="image/s-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> momos / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> burger / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> pizza  </a>
+                </div>
+                <h3>The Pizza Stone...</h3>
+                <p>Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened,</p>
+                <a href="#" onclick="net()" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="newsletter">
+        <h3>newsletter</h3>
+        <form action="">
+            <input type="email" name="" placeholder="enter your email" id="">
+            <input type="submit" value="subscribe">
+        </form>
+    </div>
+
+    <div class="row box-container">
+
+        <div class="box col-sm-5 col-md-3 col-lg-3 ">
+            <h3 class="f-h3">our menu</h3>
+            <a href="#myPizza"><i class="fas fa-arrow-right"></i> pizza</a>
+            <a href="myBurger"><i class="fas fa-arrow-right"></i> burger</a>
+            <a href="#myChicken"><i class="fas fa-arrow-right"></i> chicken</a>
+            <a href="#myMomos"><i class="fas fa-arrow-right"></i> momos</a>
+            <a href="#myOther"><i class="fas fa-arrow-right"></i> and more...</a>
+        </div>
+
+        <div class="box col-sm-5 col-md-3 col-lg-3 ">
+            <h3 class="f-h3">quick links</h3>
+            <a href="./index.html"><i class="fas fa-arrow-right"></i> home</a>
+            <a href="./about.html"><i class="fas fa-arrow-right"></i> about</a>
+            <a href="./contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+            <a href="./menu.html"><i class="fas fa-arrow-right"></i> menu</a>
+            <a href="./order.html"> <i class="fas fa-arrow-right"></i> order</a>
+        </div>
+
+        <div class="box col-sm-5 col-md-3 col-lg-3 ">
+            <h3 class="f-h3">extra links</h3>
+            <a href="#myOrder"> <i class="fas fa-arrow-right"></i> my order</a>
+            <a href="javascript:void(0)"> <i class="fas fa-arrow-right"></i> my account</a>
+            <a href="javascript:void(0)"> <i class="fas fa-arrow-right"></i> my favorite</a>
+            <a href="javascript:void(0)"> <i class="fas fa-arrow-right"></i> terms of use</a>
+            <a href="javascript:void(0)"> <i class="fas fa-arrow-right"></i> privary policy</a>
+        </div>
+
+        <div class="box col-sm-5 col-md-3 col-lg-3 open-hour">
+            <h3 class="t-h3">opening Hours</h3>
+            <p>sat & sun : 1:00pm<br>to 4:00am</p>
+            <p>mon & tue : 1:00pm <br>to 2:00am</p>
+            <p>wed & thus : 1:00pm<br> to 2:00am</p>
+            <p>friday : 3:00pm<br>to 2:00am</p>
+        </div>
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="share">
+            <a href="javascript:void(0)" class="fab fa-youtube"></a>
+            <a href="javascript:void(0)" class="fab fa-facebook-f"></a>
+            <a href="javascript:void(0)" class="fab fa-twitter"></a>
+            <a href="javascript:void(0)" class="fab fa-instagram"></a>
+            <a href="javascript:void(0)" class="fab fa-pinterest"></a>
+        </div>
+    
+        <div class="credit">Copyright© 2021 <span> HBRestaurant </span> Karachi.</div>
+    
+    </div>
+
+</section>
+
+<div id="loader-container">
+    <img src="./image/loader.gif" alt="">
+</div>
+
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./Bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+<script src="./Bootstrap/js/popper.min.js"></script>
+<script src="./Bootstrap/js/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+</html>

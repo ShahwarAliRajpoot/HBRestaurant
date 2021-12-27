@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB Restaurant</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+
+ <link rel="icon" type="image/x-icon" href="./image/home-img.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="./index.html" class="logo"> <i class="fas fa-utensils main-logo"></i>HBRestaurant</a>
+
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./order.html">Order</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </header>
+
+    <section class="search-form-container">
+
+        <form action="">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </section>
+
+    <section class="shopping-cart-container">
+
+        <div class="products-container">
+
+            <h3 class="title">your products</h3>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="image/menu-1.png" alt="">
+                    <div class="content">
+                        <h3>Meaty Burger</h3>
+                        <span> quantity : </span>
+                        <input type="number" name="" value="3" id="">
+                        <br>
+                        <span> price : </span>
+                        <span class="price"> Rs 399 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="image/menu-2.png" alt="">
+                    <div class="content">
+                        <h3>Vegetable Pizza</h3>
+                        <span> quantity : </span>
+                        <input type="number" name="" value="1" id="">
+                        <br>
+                        <span> price : </span>
+                        <span class="price"> Rs 479 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="image/menu-3.png" alt="">
+                    <div class="content">
+                        <h3>Sandwich</h3>
+                        <span> quantity : </span>
+                        <input type="number" name="" value="5" id="">
+                        <br>
+                        <span> price : </span>
+                        <span class="price"> Rs 150 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="image/menu-4.png" alt="">
+                    <div class="content">
+                        <h3>State Burger</h3>
+                        <span> quantity : </span>
+                        <input type="number" name="" value="2" id="">
+                        <br>
+                        <span> price : </span>
+                        <span class="price"> Rs 160 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="image/menu-5.png" alt="">
+                    <div class="content">
+                        <h3>Potato Frice</h3>
+                        <span> quantity : </span>
+                        <input type="number" name="" value="4" id="">
+                        <br>
+                        <span> price : </span>
+                        <span class="price"> Rs 120 </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cart-total">
+
+            <h3 class="title"> cart total </h3>
+
+            <div class="box">
+
+                <h3 class="subtotal"> subtotal : <span>Rs 3,226</span> </h3>
+                <h3 class="total"> total : <span>Rs 3,226</span> </h3>
+
+                <a href="#" onclick="checkout()" class="btn">proceed to checkout</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="login-form-container">
+
+        <form action="">
+            <h3>login form</h3>
+            <input type="email" name="" placeholder="enter your email" id="" class="box">
+            <input type="password" name="" placeholder="enter your password" id="" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <button type="submit" value="login now" class="btn">Login Now</button>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">create one</a></p>
+        </form>
+
+    </div>
+
+    <section class="order" id="order">
+
+        <div class="heading">
+            <span>order now</span>
+            <h3>fastest home delivery</h3>
+        </div>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <img src="image/wall-clock-icon.svg" alt="">
+                <h3>1:00pm to 4:00am</h3>
+            </div>
+
+            <div class="icons">
+                <img src="image/address-icon.svg" alt="">
+                <h3>+92 3022633886</h3>
+            </div>
+
+            <div class="icons">
+                <img src="image/phone-icon.svg" alt="">
+                <h3>Nazimabad,Karachi</h3>
+            </div>
+
+        </div>
+
+        <form action="">
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your name</span>
+                    <input type="text" placeholder="customer's name" name="" id="">
+                </div>
+                <div class="inputBox">
+                    <span>your number</span>
+                    <input type="number" placeholder="customer's number" name="" id="">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your order</span>
+                    <input type="text" placeholder="food you want" name="" id="">
+                </div>
+                <div class="inputBox">
+                    <span>how much</span>
+                    <input type="number" placeholder="number or orders" name="" id="">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your details</span>
+                    <input type="text" placeholder="your message" name="" id="">
+                </div>
+                <div class="inputBox">
+                    <span>pick up time</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <textarea placeholder="your address" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="inputBox">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.62221270489!2d67.02296871456952!3d24.910864884030218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fbf2c191825%3A0x987fa9fde4cea948!2s1%20Nazimabad%20Rd%2C%20Block%203%20Nazimabad%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2074600%2C%20Pakistan!5e0!3m2!1sen!2s!4v1639680404294!5m2!1sen!2s"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <button type="submit" onclick="proceed()" class="btn">Proceed to Order</button>
+
+        </form>
+
+    </section>
+
+    <section class="review" id="review">
+
+        <div class="heading">
+            <span>Our customers</span>
+            <h3>Reviews</h3>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/boy2.jpg" alt="">
+                <h3>Faisal Khan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I am realy thank full of you realy the best and fastest services and healthy food and tasty food such
+                    a good & delicious food Now i can any time order.</p>
+            </div>
+            <div class="box">
+                <img src="image/boy1.jpg" alt="">
+                <h3>Osama Afzal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>I am realy thank full of you realy the best and fastest services and healthy food and tasty food such
+                    a good & delicious food Now i can any time order.</p>
+            </div>
+            <div class="box">
+                <img src="image/boy3.jpg" alt="">
+                <h3>Muzammil Khan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I am realy thank full of you realy the best and fastest services and healthy food and tasty food such
+                    a good & delicious food Now i can any time order.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="newsletter">
+            <h3>newsletter</h3>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" id="">
+                <input type="submit" value="subscribe">
+            </form>
+        </div>
+
+        <div class="row box-container">
+
+            <div class="box col-sm-5 col-md-3 col-lg-3 ">
+                <h3 class="f-h3">our menu</h3>
+                <a href="#myPizza"><i class="fas fa-arrow-right"></i> pizza</a>
+                <a href="myBurger"><i class="fas fa-arrow-right"></i> burger</a>
+                <a href="#myChicken"><i class="fas fa-arrow-right"></i> chicken</a>
+                <a href="#myMomos"><i class="fas fa-arrow-right"></i> momos</a>
+                <a href="#myOther"><i class="fas fa-arrow-right"></i> and more...</a>
+            </div>
+
+            <div class="box col-sm-5 col-md-3 col-lg-3 ">
+                <h3 class="f-h3">quick links</h3>
+                <a href="./index.html"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="./about.html"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="./contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+                <a href="./menu.html"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="./order.html"> <i class="fas fa-arrow-right"></i> order</a>
+            </div>
+
+            <div class="box col-sm-5 col-md-3 col-lg-3 ">
+                <h3 class="f-h3">extra links</h3>
+                <a href="#myOrder"> <i class="fas fa-arrow-right"></i> my order</a>
+                <a href="javascript:void(0)"> <i class="fas fa-arrow-right"></i> my account</a>
+                <a href="javascript:void(0)"> <i class="fas fa-arrow-right"></i> my favorite</a>
+                <a href="javascript:void(0)"> <i class="fas fa-arrow-right"></i> terms of use</a>
+                <a href="javascript:void(0)"> <i class="fas fa-arrow-right"></i> privary policy</a>
+            </div>
+
+            <div class="box col-sm-5 col-md-3 col-lg-3 open-hour">
+                <h3 class="t-h3">opening Hours</h3>
+                <p>sat & sun : 1:00pm<br>to 4:00am</p>
+                <p>mon & tue : 1:00pm <br>to 2:00am</p>
+                <p>wed & thus : 1:00pm<br> to 2:00am</p>
+                <p>friday : 3:00pm<br>to 2:00am</p>
+            </div>
+
+
+        </div>
+
+        </div>
+
+        <div class="bottom">
+
+            <div class="share">
+                <a href="javascript:void(0)" class="fab fa-youtube"></a>
+                <a href="javascript:void(0)" class="fab fa-facebook-f"></a>
+                <a href="javascript:void(0)" class="fab fa-twitter"></a>
+                <a href="javascript:void(0)" class="fab fa-instagram"></a>
+                <a href="javascript:void(0)" class="fab fa-pinterest"></a>
+            </div>
+
+            <div class="credit">Copyright© 2021 <span> HBRestaurant </span> Karachi.</div>
+
+
+        </div>
+
+    </section>
+
+</body>
+<script src="./Bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+<script src="./Bootstrap/js/popper.min.js"></script>
+<script src="./Bootstrap/js/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+
+</html>
